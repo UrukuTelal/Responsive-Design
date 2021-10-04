@@ -84,10 +84,11 @@ header {
     padding: 1%;
     margin-bottom:1%;
     justify-content: left;
+    /*For a header that stays in view
     position: fixed;
     z-index: 999;
     opacity: 80%;
-    width: 100%;
+    width: 100%;*/
 }
 .me{
     display: inherit;
@@ -147,7 +148,12 @@ footer{
 }
 
 @media(max-width: 800px){
-
+.row div{
+    width:20%;
+}
+.topContainer img{
+    width:40%;
+}
 }
 
 @media(max-width:500px){
