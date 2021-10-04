@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width: 100%;
+}
+
+button{
+background-color: white;
+color:black;
+border: black solid 1px;
+padding: 2% 3%;
+margin-left: 3%;
+border-radius: 20%;
+transition:1s;
+}
+button:hover{
+    background-color: black;
+color:white;
+border: white solid 1px;
+transition:1s;
+}
+button a{
+    text-decoration: none;
+    color:inherit;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    background-color: lightgray;
+    padding: 1%;
+    margin-bottom:1%;
+    justify-content: left;
+    /*For a header that stays in view
+    position: fixed;
+    z-index: 999;
+    opacity: 80%;
+    width: 100%;*/
+}
+.me{
+    display: inherit;
+    width:5%;
+}
+ .me img{
+    border-radius: 50%;
+    width:100%;
+
+}
+.name{
+    text-align:center;
+    font-size: 3rem;
+    
+}
+
+.links{
+    width:45%;    
+}
+button .links {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+}
+
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8%;
+}
+.intro{
+    padding: 2%;
+    width:50%;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.element{
+    text-align: center;
+}
+
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+    padding: 2%;
+
+}
+
+@media(max-width: 800px){
+.row div{
+    width:20%;
+}
+.topContainer img{
+    width:40%;
+}
+}
+
+@media(max-width:500px){
+
+    header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1% 0;
+}
+button{
+    width:40%;
+    margin: 1% 0;
+
+}
+.topContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topContainer div{
+    width:90%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.row div{
+    width:40%;
+    margin:4% 0;
+}
+
+}
